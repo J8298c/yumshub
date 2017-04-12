@@ -24,6 +24,11 @@ These instruction will help you get a local copy of Yum up and running.
 <p>To fire up Yum in your browser you can run Yarn/Npm <strong>dev</strong> this will start the development server which will watch your files for errors everytime you save.</p>
 
 <p>If you want to further configure the webpack build you can run Yarn/Npm eject(<strong>This is irreversible</strong>).</p>
+<p>To login into the app you can create a username and password or simply use the default user below</p>
+<ul style="list-style-type: none">
+<li>Username: thewolverine@xmen.com</li>
+<li>Password: abcd1234</li>
+</ul>
 <hr />
 
 <h3>Testing</h3>
@@ -62,3 +67,4 @@ describe('<NotFound />', ()=>{
 	<ol><a href="http://sinonjs.org/releases/v2.1.0/spies/">Sinon</a></ol>
 	<ol><a href="https://github.com/facebookincubator/create-react-app">React-Create-App </a></ol>
 </ul>
+<hr />
