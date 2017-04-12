@@ -29,7 +29,7 @@ import {LinkContainer} from 'react-router-bootstrap';
             </LinkContainer>
             <NavDropdown eventKey={3} title="Account" id="basic-nav-dropdown">
           <LinkContainer to={{pathname:'/profile'}}><MenuItem eventKey={3.2}>Profile</MenuItem></LinkContainer>
-          <MenuItem eventKey={3.3} onClick={this.props.signOut}>Sign Out</MenuItem>
+          <MenuItem eventKey={3.3} onClick={this.props.onClick}>Sign Out</MenuItem>
         </NavDropdown>
           </Nav>
         </Navbar.Collapse>

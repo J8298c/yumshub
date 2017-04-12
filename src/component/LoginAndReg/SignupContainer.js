@@ -42,6 +42,8 @@ export class  SignupContainer extends React.Component{
   }
     render(){
       return(
+          <div>
+                <h1>YumsHub</h1>
           <Form onSubmit={this.onFormSubmit} className="login-form" horizontal>
 
               <InputLabels  labelClass="input-label" type="text" placeholder="Enter Your Email" className="form-input"
@@ -66,6 +68,7 @@ export class  SignupContainer extends React.Component{
               </FormGroup>
               <div><Link to="/login">Already a member</Link></div>
         </Form>
+        </div>
           )
     }
 }

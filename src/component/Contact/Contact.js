@@ -15,13 +15,13 @@ export default class Contact extends React.Component{
         <h2 className="contact-header">How Can we help serve you better</h2>
         <p className="service-statement">Our Customer Service team is ready to help 24/7</p>
         <Button className='support-button'>
-          Email
+          <a href="mailto:YumsTeam@example.com">Email Our Team</a>
         </Button>
         <div className="orDiv">
           Or
         </div>
         <Button className='support-button'>
-          Email
+          <a href="tel:1-562-867-5309">Call</a>
         </Button>
       </div>
         <Link className="back-home" to="/">Back to search</Link>

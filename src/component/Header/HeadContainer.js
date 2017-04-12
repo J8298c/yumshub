@@ -18,6 +18,7 @@ class HeadContainer extends React.Component{
         this.searchQuery = this.searchQuery.bind(this);
     }
     signOut(){
+        console.log('signing out');
         firebaseApp.auth().signOut();
     }
     searchQuery(event){

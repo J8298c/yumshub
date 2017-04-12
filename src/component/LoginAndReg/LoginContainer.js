@@ -1,5 +1,6 @@
 import React from 'react';
 import InputLabels from './InputLabels';
+import Logo from '../Logo/Logo';
 import {Form, Button, FormGroup, Col} from 'react-bootstrap';
 import firebaseObj from '../../firebase';
 import {Link} from 'react-router';
@@ -24,7 +25,8 @@ export default class LoginContainer extends React.Component{
   }
   render(props){
     return(
-
+        <div>
+        <Logo />
         <Form onSubmit={this.onFormSubmit} className="login-form" horizontal>
           <InputLabels labeClass="input-label" type="text"
             placeholder="Enter your Email" inputClass="form-input"
@@ -35,14 +37,15 @@ export default class LoginContainer extends React.Component{
             onChange={event=>this.setState({password: event.target.value})} labelName="Password"/>
 
             <FormGroup>
-                <Col smOffset={2} sm={10}>
+                <Col>
                     <Button className="login-button" type="submit" onClick={this.signUp}>
                         Login
                     </Button>
                 </Col>
             </FormGroup>
-          <div><Link to="/signup">Create New Account</Link></div>
+          <div className="signuplink"><Link to="/signup">Create New Account</Link></div>
         </Form>
+        </div>
     )
   }
 }

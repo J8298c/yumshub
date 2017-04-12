@@ -5,7 +5,7 @@ import './Login.css';
 export default class InputLabels extends React.Component{
   render(props){
     return(
-      <FormGroup controlId="formHorizontalEmail">
+      <FormGroup className="firstinput" controlId="formHorizontalEmail">
         <Col componentClass={ControlLabel} sm={2} className={this.props.labeClass}>
           {this.props.labelName}
         </Col>
