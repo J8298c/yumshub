@@ -1,0 +1,37 @@
+
+.login-form {
+    width: 60%;
+    display: block;
+    margin: 15% auto;
+    height: 324px;
+    background-color: #c0392b;
+    padding: 25px;
+    border: 1px solid #c0392b;
+    border-radius: 10px;
+}
+.input-label {
+  font-weight: bold;
+  font-size: 20px;
+}
+.form-input, .password-input {
+  width: 100%;
+  display: block;
+}
+.login-button {
+    color: #fcfcfc;
+    background-color: #9b59b6;
+    border-color: #9b59b6;
+    width: 35%;
+    display: block;
+    margin-left: 144px;
+}
+.login-form a {
+    color: #2c3e50;
+    margin-left: 35px;
+}
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+    color: #fcfcfc;
+}

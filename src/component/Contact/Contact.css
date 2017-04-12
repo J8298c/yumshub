@@ -1,0 +1,29 @@
+h2.contact-header {
+    text-align: center;
+    color: #2980b9;
+    margin-top: 65px;
+}
+button.support-button.btn.btn-default {
+    display: block;
+    margin: 25px auto;
+    width: 25%;
+    border: 1px solid #2980b9;
+    background-color: #2980b9;
+    color: #fcfcfc;
+}
+.service-statement {
+  text-align: center;
+  color: #2980b9;
+}
+.orDiv {
+    text-align: center;
+    font-size: 25px;
+    color: #c0392b;
+}
+a.back-home {
+    /* width: 100%; */
+    margin-top: 35px;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}

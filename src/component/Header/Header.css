@@ -1,0 +1,75 @@
+.container {
+  width: 96%;
+  margin-: 2%;
+  margin-: 2%;
+}
+.site-title {
+    font-family: 'Playfair Display', serif;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    /* background-color: #e7e7e7; */
+}
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fcfcfc;
+    background-color: transparent;
+}
+.navbar {
+     border-radius: 0px;
+}
+.navbar-header {
+    width: 30%;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fcfcfc;
+}
+.navbar-default .navbar-brand {
+    color: #fcfcfc;
+}
+a.navbar-brand {
+    font-size: 30px;
+}
+.navbar-form.navbar-left {
+    width: 33%;
+}
+.form-group {
+    width: 100%;
+}
+input.app-search-bar.form-control {
+    width: 90%;
+}
+.btn-default {
+    color: #fcfcfc;
+    background-color: #4C8FB9;
+    border-color: #4C8FB9;
+    margin-left: 12px;
+}
+input.app-search-bar.form-control {
+    width: 75%;
+}
+.btn-sample:active {
+  box-shadow: none;
+}
+.btn-default:active:focus {
+  color: #fcfcfc;
+  background-color: #4C8FB9;
+  border-color: #4C8FB9;
+}
+@media screen and (max-width: 480px){
+    .navbar-header {
+        width: 100%;
+    }
+    .navbar-form.navbar-left {
+        width: 100%;
+    }
+    input.app-search-bar.form-control {
+        width: 75%;
+        display: inline-block;
+    }
+}
