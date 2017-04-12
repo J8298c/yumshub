@@ -1,5 +1,5 @@
 <img src="https://travis-ci.org/J8298c/yumshub.svg?branch=master" alt="build pass or fail"/>
-<h1 style="text-align: center">Munch!</h1> 
+<h1 style="text-align: center">Yums!</h1> 
 <p>Yums lets you search for restuarants that deliver near you. Users have the ability to search for food by type on a side note currently the only options we have for search are <strong>"Italian Pizza Burgers Vegan American Spanish"</strong>. The search page provides a view of all types of restuarants and all nearby restuarants and thier rating, if you want to check out the restaurants menu just click on the restuarant of your choosing and you will be taken to the restaurants menu.</p>
 <hr />
 
