@@ -37,7 +37,7 @@ These instruction will help you get a local copy of Yum up and running.
 
 <p>Most of the tests use shallow rendering to test that the inner elements of the components are rendering below you can see a quick example this type of test</p>
 
-<code>
+```javascript
 describe('<NotFound />', ()=>{
 	it('should render correctly', ()=>{
 		const wrapper = shallow(<NotFound />);
@@ -45,7 +45,7 @@ describe('<NotFound />', ()=>{
 		expect(wrapper.find('h1')).to.have.length(1);
 	})
 })
-</code>
+```
 <hr />
 
 <h3>Deployment</h3>
