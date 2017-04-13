@@ -35,7 +35,7 @@ class RestaurantsContainer extends Component {
               <HeadContainer/>
               <div className="image-banner">
               </div>
-                <div>
+                <div className="restaurantlistcontainer">
                 {restaurantcards}
                 </div>
             </div>

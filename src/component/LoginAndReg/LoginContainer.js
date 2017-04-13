@@ -25,7 +25,7 @@ export default class LoginContainer extends React.Component{
   }
   render(props){
     return(
-        <div>
+        <div className="logincontainer">
         <Logo />
         <Form onSubmit={this.onFormSubmit} className="login-form" horizontal>
           <InputLabels labeClass="input-label" type="text"

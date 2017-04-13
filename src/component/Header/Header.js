@@ -11,7 +11,8 @@ import {LinkContainer} from 'react-router-bootstrap';
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#" className="site-title">YUMS</a>
+            <a href="#" className="site-title"><span className="firstletter">Y</span><span className="secondletter">U</span><span className="thirdletter">M</span>
+                <span className="fourthletter">S</span></a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

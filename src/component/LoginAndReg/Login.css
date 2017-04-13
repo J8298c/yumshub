@@ -2,7 +2,7 @@
 .login-form {
     width: 72%;
     display: block;
-    margin: 6% auto;
+    margin: 4% auto;
     height: 324px;
     background-color: #673AB6;
     padding: 20px;
@@ -38,4 +38,12 @@ button.login-button {
 }
 .firstinput {
     margin-top: 28px;
+}
+.logincontainer{
+background: #e53935;  /* fallback for old browsers */
+background: -webkit-linear-gradient(left, #e35d5b, #e53935);
+background: -moz-linear-gradient(left, #e35d5b, #e53935);
+background: -o-linear-gradient(left, #e35d5b, #e53935);
+background: linear-gradient(to right, #e35d5b, #e53935);
+height: 800px;
 }
