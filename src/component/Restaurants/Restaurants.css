@@ -74,6 +74,9 @@ span.glyphicon.glyphicon-star {
 }
 .menu {
     margin-top: 26px;
+    margin-left: 4%;
+    margin-right: -4%;
+    display: block;
 }
 
 .panel.panel-default {

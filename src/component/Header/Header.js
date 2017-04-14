@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button, Glyphicon} from 'react-bootstrap';
 import './Header.css';
 import {LinkContainer} from 'react-router-bootstrap';
 
@@ -25,6 +25,7 @@ import {LinkContainer} from 'react-router-bootstrap';
             {' '}
           </Navbar.Form>
           <Nav pullRight>
+          <NavItem eventKey={1} href="#"><Glyphicon className="shoppingcart" glyph="shopping-cart"/></NavItem>
             <LinkContainer to={{pathname:'/contact'}}>
             <NavItem eventKey={1} href="#">Contact Us</NavItem>
             </LinkContainer>
