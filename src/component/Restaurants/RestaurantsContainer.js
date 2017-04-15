@@ -33,9 +33,7 @@ class RestaurantsContainer extends Component {
     return (
             <div>
               <HeadContainer/>
-              <div className="image-banner">
-              </div>
-                <div>
+                <div className="restaurantlistcontainer">
                 {restaurantcards}
                 </div>
             </div>

@@ -1,0 +1,19 @@
+.logo {
+    width: 100%;
+    text-align: center;
+    font-size: 72px;
+    margin-top: 0px;
+    font-family: 'Mitr', sans-serif;
+}
+.firstletter {
+    color: #FFFFFF
+}
+.secondletter {
+    color: #FEC007;
+}
+.thirdletter {
+    color: #4CAE50;
+}
+.fourthletter {
+    color: #673AB7;
+}

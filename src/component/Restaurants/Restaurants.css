@@ -6,6 +6,9 @@
   margin-bottom: 25px;
   margin-top: 0;
 }
+.restaurantlistcontainer {
+    margin-top: 40px;
+}
 .thumbnail {
     display: block;
     padding: 4px;
@@ -15,9 +18,8 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     -webkit-transition: border .2s ease-in-out;
-    -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;
-    width: 300px;
+    width: 100%;
     height: 300px;
 }
 span.glyphicon.glyphicon-phone {
@@ -36,7 +38,6 @@ p.rating {
 
 .banner {
   height: 300px;
-  margin-top: -20px;
 }
 
 .banner-info {
@@ -75,6 +76,9 @@ span.glyphicon.glyphicon-star {
 }
 .menu {
     margin-top: 26px;
+    margin-left: 4%;
+    margin-right: -4%;
+    display: block;
 }
 
 .panel.panel-default {
@@ -89,8 +93,9 @@ span.glyphicon.glyphicon-star {
     font-weight: 600;
     height: 3%;
     padding: 2%;
-    magin-top: 25px;
+    margin-top: 25px;
 }
+
 .thumbnail img {
     width: 300px;
     height: 182px;
@@ -104,6 +109,87 @@ p.type, p.price {
     width: 45%;
     display: inline-block;
 }
+@media screen and (min-width: 769px) and (max-width: 1149px){
+    .navbar-right {
+        float: right!important;
+        margin-right: -15px;
+        width: 37%;
+    }
+    .form-group {
+        width: 99%;
+    }
+    .navbar-form.navbar-left {
+        width: 50%;
+    }
+    .navbar-header {
+        width: 16%;
+    }
+    .container {
+        width: 97%;
+    }
+    nav.navbar.navbar-default {
+        margin-bottom: 0;
+        background-color: #e74c3c;
+        border-color: #e74c3c;
+        color: white;
+        width: 100%;
+        display: inline-block;
+    }
+    .navbar-form.navbar-left {
+        width: 50%;
+    }
+    .navbar-header{
+        width: 14%;
+    }
+    .cards {
+        width: 45%;
+        margin-left: 23px;
+    }
+    .thumbnail img {
+        width: 100%;
+        height: 182px;
+    }
+    input.app-search-bar.form-control {
+        width: 73%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 700px) {
+   .image-banner{
+       display: none;
+   }
+   .form-group {
+       display: inline-flex;
+   }
+   input.app-search-bar.form-control {
+    width: 75%;
+    }
+   .navbar-header {
+    width: 100%;
+    }
+    .navbar-form.navbar-left {
+    width: 100%;
+    }
+    .restaurntcardimage.thumbnail {
+    margin-top: 25px;
+    /* width: 94%; */
+    }
+    .restaurntcardimage img {
+        width: 100%;
+    }
+    p.restaurantcardtitle {
+    font-size: 19px;
+    width: 45%;
+    display: inline-block;
+    }
+    p.restaurantcardphone {
+    width: 45%;
+    display: inline-block;
+    font-size: 18px;
+    }
+
+}
+
+
 @media screen and (max-width: 480px) {
   .banner-info {
       margin-top: 51%;
