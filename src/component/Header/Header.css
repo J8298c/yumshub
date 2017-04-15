@@ -5,6 +5,7 @@
 }
 .site-title {
     font-family: 'Playfair Display', serif;
+    font-size: 30px;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     color: #555;
@@ -12,6 +13,9 @@
 }
 span.shoppingcart.glyphicon.glyphicon-shopping-cart {
     font-size: 19px;
+}
+.support-button a {
+    color: #fcfcfc;
 }
 nav.navbar.navbar-default {
     margin-bottom: 0;

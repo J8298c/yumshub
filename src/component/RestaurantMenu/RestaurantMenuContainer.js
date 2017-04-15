@@ -3,6 +3,7 @@ import firebaseObject from '../../firebase';
 import {Link} from 'react-router';
 import {Glyphicon, Panel} from 'react-bootstrap';
 import RestaurantMenuBanner from './RestaurantMenuBanner';
+import HeadContainer from '../Header/HeadContainer';
 import '../Restaurants/Restaurants.css';
 
 const goodeatsRef = firebaseObject.goodeatsRef;
@@ -40,6 +41,7 @@ export default class RestaurantMenuContainer extends React.Component {
                    };
        return (
            <div>
+                <HeadContainer />
                 <RestaurantMenuBanner divStyle={divStyle} name={name} phoneAndAddress={phoneAndAddress} starRating={starRating}
                   rating={rating}/>
                <div className="delivery-time">

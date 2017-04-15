@@ -1,6 +1,7 @@
 import React from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button, Glyphicon} from 'react-bootstrap';
 import './Header.css';
+import {Link} from 'react-router';
 import {LinkContainer} from 'react-router-bootstrap';
 
 
@@ -11,8 +12,8 @@ import {LinkContainer} from 'react-router-bootstrap';
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#" className="site-title"><span className="firstletter">Y</span><span className="secondletter">U</span><span className="thirdletter">M</span>
-                <span className="fourthletter">S</span></a>
+            <Link to="/"><p className="site-title"><span className="firstletter">Y</span><span className="secondletter">U</span><span className="thirdletter">M</span>
+                <span className="fourthletter">S</span></p></Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -25,7 +26,9 @@ import {LinkContainer} from 'react-router-bootstrap';
             {' '}
           </Navbar.Form>
           <Nav pullRight>
+          <LinkContainer to={{pathname:'/shoppingcart'}}>
           <NavItem eventKey={1} href="#"><Glyphicon className="shoppingcart" glyph="shopping-cart"/></NavItem>
+          </LinkContainer>
             <LinkContainer to={{pathname:'/contact'}}>
             <NavItem eventKey={1} href="#">Contact Us</NavItem>
             </LinkContainer>

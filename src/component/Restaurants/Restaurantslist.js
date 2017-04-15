@@ -10,7 +10,7 @@ export default class Restaurantslist extends React.Component{
       const ratingsType = `${this.props.rating} ${this.props.type}`
     return(
       <div className="restaurants-cards">
-      <Col xs={12} md={3}>
+      <Col xs={12} md={3} className="cards">
         <Link to={menuLink} ><Thumbnail className="restaurntcardimage" src={this.props.imageUrl} alt="242x200">
           <p className="restaurantcardtitle">{this.props.name}</p>
           <p className="restaurantcardphone"><span><Glyphicon glyph="phone" /></span>{this.props.phone}</p><p>{ratingsType}</p>

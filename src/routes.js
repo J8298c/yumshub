@@ -19,11 +19,16 @@ const initialAppState = {
       email: null,
       password: null,
       firstname: null,
-      lastname: null
+      lastname: null,
+      shoppingcart: [{
+        dishes: null,
+        price: null,
+        quantity: null
+      }]
     },
     restaurants: []
 };
-const store = createStore(appReducers, initialAppState, applyMiddleware(thunk));
+export const store = createStore(appReducers, initialAppState, applyMiddleware(thunk));
 const firebaseApp = firebasebObject.firebaseApp;
 firebaseApp.auth().onAuthStateChanged(function(user) {
   if (user) {
