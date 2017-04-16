@@ -13,17 +13,30 @@ let restaurant;
 export default class RestaurantMenuContainer extends React.Component {
    componentWillMount(props){
        const {name} = this.props.params;
+       console.log(name);
        goodeatsRef.orderByChild('name').startAt(name).endAt(name).on('child_added', (snapshot)=>{
          restaurant = snapshot.val();
        })
    }
+  //  constructor(props){
+  //    super(props);
+  //    this.addToCart = this.addToCart.bind(this);
+     
+  //  }
+  // addToCart(event){
+  //   const cartItems = [];
+  //   cartItems.push(event.target.innerText);
+  //   console.log(event.target.innerText);
+  //   console.log(cartItems);
+  // }
    render(props) {
-     const {name, dishes, imageUrl, phone, rating, type} = restaurant;
+     const {name, phone, rating, imageUrl, menu } = restaurant;
      const {address} = restaurant.location;
      const menuItem =[];
-      dishes.forEach((dish, index)=>{
-         const listSet = <Panel><div className="menu-Item" key={index}><p
-           className="dish">{dish}</p><p className="description">Amet ex nisi ipsum ut dolore velit laborum consequat nostrud anim pariatur.</p><p className="price"> ${index + 20}</p><p className="type">Type: {type}</p>
+       menu.forEach((dish, index)=>{
+         console.log(dish);
+         const listSet = <Panel key={index} onClick={this.addToCart}><div className="menu-Item"><p
+           className="dish">{dish.dish}</p><p className="description">{dish.description}</p><p className="price"> ${dish.price}</p>
          </div></Panel>
          menuItem.push(listSet);
      });
@@ -56,7 +69,4 @@ export default class RestaurantMenuContainer extends React.Component {
        )
    }
 }
-function mapStateToProps(state){
-  const {user} = state;
-  console.log(user, 'user state');
-}
+

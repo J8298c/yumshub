@@ -20,11 +20,7 @@ const initialAppState = {
       password: null,
       firstname: null,
       lastname: null,
-      shoppingcart: [{
-        dishes: null,
-        price: null,
-        quantity: null
-      }]
+      shoppingcart: []
     },
     restaurants: []
 };
@@ -32,8 +28,8 @@ export const store = createStore(appReducers, initialAppState, applyMiddleware(t
 const firebaseApp = firebasebObject.firebaseApp;
 firebaseApp.auth().onAuthStateChanged(function(user) {
   if (user) {
-    const {email, displayName} = user;
-    store.dispatch(logIn(email, displayName));
+    const {email, displayName, shoppingcart} = user;
+    store.dispatch(logIn(email, displayName, shoppingcart));
     browserHistory.push('/');
   } else {
     browserHistory.replace('/login');

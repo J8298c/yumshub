@@ -24,6 +24,7 @@ class RestaurantsContainer extends Component {
   }
   
   render(props) {
+    console.log(this.props.restaurants);
         const restaurantcards = this.props.restaurants.map((restaurantcard, index)=>{
             return(
                 <Restaurantslist key={index} name={restaurantcard.name} imageUrl={restaurantcard.imageUrl}
