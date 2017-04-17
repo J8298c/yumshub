@@ -6,6 +6,7 @@ import RestaurantMenuBanner from './RestaurantMenuBanner';
 import HeadContainer from '../Header/HeadContainer';
 import '../Restaurants/Restaurants.css';
 import {connect} from 'react-redux';
+import RestaurantMenu from './RestaurantMenu';
 
 const goodeatsRef = firebaseObject.goodeatsRef;
 let restaurant;
@@ -18,26 +19,29 @@ export default class RestaurantMenuContainer extends React.Component {
          restaurant = snapshot.val();
        })
    }
-  //  constructor(props){
-  //    super(props);
-  //    this.addToCart = this.addToCart.bind(this);
+   constructor(props){
+     super(props);
+     this.addToCart = this.addToCart.bind(this);
      
-  //  }
-  // addToCart(event){
-  //   const cartItems = [];
-  //   cartItems.push(event.target.innerText);
-  //   console.log(event.target.innerText);
-  //   console.log(cartItems);
-  // }
+   }
+  addToCart(event){
+    const cart = [];
+    if(cart.length === 0){
+      cart.push(event.target);
+    } else {
+      cart.unshift(event.target);
+    }
+  
+    console.log(cart);
+  }
    render(props) {
      const {name, phone, rating, imageUrl, menu } = restaurant;
      const {address} = restaurant.location;
      const menuItem =[];
        menu.forEach((dish, index)=>{
-         console.log(dish);
-         const listSet = <Panel key={index} onClick={this.addToCart}><div className="menu-Item"><p
-           className="dish">{dish.dish}</p><p className="description">{dish.description}</p><p className="price"> ${dish.price}</p>
-         </div></Panel>
+         const listSet = <RestaurantMenu key={index} onClick={this.addToCart}
+                   dish={dish.dish} description={dish.description} 
+                   price={dish.price} />
          menuItem.push(listSet);
      });
      const phoneAndAddress = `${address} ${phone} `;
