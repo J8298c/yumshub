@@ -7,6 +7,7 @@ export class Profile extends React.Component{
     render(props){
         const userImage = 'http://coddify.com/wp-content/uploads/avatar-1.png';
         const {email, displayName} = this.props.user;
+        console.log(this.props.user, 'the user');
         return (
             <div>
                 <div className="userImage">
@@ -30,6 +31,7 @@ export class Profile extends React.Component{
 
 function mapStateToProps(state){
     const {user} = state;
+    console.log(user, 'the user state');
     return {
         user
     }

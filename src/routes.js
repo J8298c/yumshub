@@ -13,6 +13,7 @@ import NotFound from './component/NotFound/NotFound';
 import RestaurantsContainer from './component/Restaurants/RestaurantsContainer';
 import RestaurantMenuContainer from './component/RestaurantMenu/RestaurantMenuContainer';
 import Contact from './component/Contact/Contact';
+import ShoppingCart from './component/ShoppingCart/ShoppingCart';
 
 const initialAppState = {
     user: {
@@ -45,6 +46,7 @@ firebaseApp.auth().onAuthStateChanged(function(user) {
         <Route path="/login" component={LoginContainer}/>
         <Route path="/signup" component={SignupContainer} />
         <Route path="/contact" component={Contact} />
+        <Route path="/cart" component={ShoppingCart} />
         <Route path="*" component={NotFound}/>
     </Router>
   </Provider>

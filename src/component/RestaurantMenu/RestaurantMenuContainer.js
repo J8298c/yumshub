@@ -19,29 +19,12 @@ export default class RestaurantMenuContainer extends React.Component {
          restaurant = snapshot.val();
        })
    }
-   constructor(props){
-     super(props);
-     this.addToCart = this.addToCart.bind(this);
-     
-   }
-  addToCart(event){
-    const cart = [];
-    if(cart.length === 0){
-      cart.push(event.target);
-    } else {
-      cart.unshift(event.target);
-    }
-  
-    console.log(cart);
-  }
    render(props) {
      const {name, phone, rating, imageUrl, menu } = restaurant;
      const {address} = restaurant.location;
      const menuItem =[];
        menu.forEach((dish, index)=>{
-         const listSet = <RestaurantMenu key={index} onClick={this.addToCart}
-                   dish={dish.dish} description={dish.description} 
-                   price={dish.price} />
+         const listSet = <RestaurantMenu key={index} dish={dish}/>
          menuItem.push(listSet);
      });
      const phoneAndAddress = `${address} ${phone} `;

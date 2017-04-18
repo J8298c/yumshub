@@ -74,12 +74,13 @@ export class  SignupContainer extends React.Component{
 }
 
 const mapStateToProps = (state)=>{
-    const {email, password, firstname, lastname} = state;
+    const {email, password, firstname, lastname, shoppingcart} = state;
     return {
         email,
         password,
         firstname,
-        lastname
+        lastname,
+        shoppingcart
     }
 }
 

@@ -25,11 +25,11 @@ export function setRestaurant(restaurants){
   };
   return action;
 }
-export const SET_SHOPPING_CART = 'SET_SHOPPING_CART';
-export function setShoppingCart(items){
+export const ADD_TO_CART = 'ADD_TO_CART';
+export function addToCart(dish){
   const action = {
-    type: SET_SHOPPING_CART,
-    items
+    type: ADD_TO_CART,
+    dish
   };
   return action;
 }

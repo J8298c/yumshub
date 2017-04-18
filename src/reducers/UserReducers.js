@@ -1,12 +1,12 @@
-import {LOGGED_IN, SIGNED_IN, SET_SHOPPING_CART} from '../actions/action';
+import {LOGGED_IN, SIGNED_IN, ADD_TO_CART} from '../actions/action';
 
 
 
 let user = {
   email: null,
   password: null,
-  shoppingcart : [],
-  displayName: null
+  displayName: null,
+  shoppingcart : []
 }
 
 export default (state = user, action) => {
@@ -27,6 +27,19 @@ export default (state = user, action) => {
       shoppingcart
     }
     return user;
+  }
+  else if (action.type === ADD_TO_CART){
+    const {dish} = action;
+    user.shoppingcart = {
+      dish: dish.dish,
+      description: dish.description,
+      price: dish.price
+    }
+    const newState = Object.assign({}, state, {
+      shoppingcart: [user.shoppingcart]
+    });
+    console.log(newState, 'the new state');
+    return newState;
   }
 
   return state;
