@@ -21,7 +21,7 @@ class SignupContainer extends React.Component{
     this.signUp = this.signUp.bind(this);
   }
   onFormSubmit(event){
-    //   event.preventDefault()
+      event.preventDefault()
   }
 
   signUp(){
