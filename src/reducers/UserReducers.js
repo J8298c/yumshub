@@ -1,7 +1,5 @@
 import {LOGGED_IN, SIGNED_IN, ADD_TO_CART} from '../actions/action';
 
-
-
 let user = {
   email: null,
   password: null,
