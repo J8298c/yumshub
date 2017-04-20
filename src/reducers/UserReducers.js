@@ -34,7 +34,7 @@ export default (state = user, action) => {
       price: dish.price
     }
     const newState = Object.assign({}, state, {
-      shoppingcart: [user.shoppingcart]
+      shoppingcart: [user.shoppingcart, ...state.shoppingcart]  
     });
     console.log(newState, 'the new state');
     return newState;
@@ -42,3 +42,5 @@ export default (state = user, action) => {
 
   return state;
 }
+//polyfill for spread operator
+//insert spread operator within object assign

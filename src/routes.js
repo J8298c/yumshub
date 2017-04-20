@@ -14,7 +14,7 @@ import RestaurantsContainer from './component/Restaurants/RestaurantsContainer';
 import RestaurantMenuContainer from './component/RestaurantMenu/RestaurantMenuContainer';
 import Contact from './component/Contact/Contact';
 import ShoppingCartContainer from './component/ShoppingCart/ShoppingCartContainer';
-import Intro from './component/LoginAndReg/Intro';
+import Intro from './component/Header/Intro';
 
 
 const initialAppState = {

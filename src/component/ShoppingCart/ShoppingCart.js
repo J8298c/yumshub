@@ -13,6 +13,7 @@ export default class ShoppingCart extends React.Component{
                         <p className="price"> ${price}</p>
                      </div>
                 </Panel>
+
         )
     }
 }
