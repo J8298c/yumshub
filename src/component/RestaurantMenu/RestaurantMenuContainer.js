@@ -6,6 +6,7 @@ import RestaurantMenuBanner from './RestaurantMenuBanner';
 import HeadContainer from '../Header/HeadContainer';
 import '../Restaurants/Restaurants.css';
 import {connect} from 'react-redux';
+import RestaurantMenu from './RestaurantMenu';
 
 const goodeatsRef = firebaseObject.goodeatsRef;
 let restaurant;
@@ -13,18 +14,17 @@ let restaurant;
 export default class RestaurantMenuContainer extends React.Component {
    componentWillMount(props){
        const {name} = this.props.params;
+       console.log(name);
        goodeatsRef.orderByChild('name').startAt(name).endAt(name).on('child_added', (snapshot)=>{
          restaurant = snapshot.val();
        })
    }
    render(props) {
-     const {name, dishes, imageUrl, phone, rating, type} = restaurant;
+     const {name, phone, rating, imageUrl, menu } = restaurant;
      const {address} = restaurant.location;
      const menuItem =[];
-      dishes.forEach((dish, index)=>{
-         const listSet = <Panel><div className="menu-Item" key={index}><p
-           className="dish">{dish}</p><p className="description">Amet ex nisi ipsum ut dolore velit laborum consequat nostrud anim pariatur.</p><p className="price"> ${index + 20}</p><p className="type">Type: {type}</p>
-         </div></Panel>
+       menu.forEach((dish, index)=>{
+         const listSet = <RestaurantMenu key={index} dish={dish}/>
          menuItem.push(listSet);
      });
      const phoneAndAddress = `${address} ${phone} `;
@@ -56,7 +56,4 @@ export default class RestaurantMenuContainer extends React.Component {
        )
    }
 }
-function mapStateToProps(state){
-  const {user} = state;
-  console.log(user, 'user state');
-}
+

@@ -26,8 +26,11 @@ import {LinkContainer} from 'react-router-bootstrap';
             {' '}
           </Navbar.Form>
           <Nav pullRight>
-          <LinkContainer to={{pathname:'/shoppingcart'}}>
-          <NavItem eventKey={1} href="#"><Glyphicon className="shoppingcart" glyph="shopping-cart"/></NavItem>
+          <LinkContainer to={{pathname:'/intro'}}>
+          <NavItem eventKey={1} href="#">Help</NavItem>
+          </LinkContainer>
+          <LinkContainer to={{pathname:'/cart'}}>
+          <NavItem eventKey={1} href="#"><Glyphicon className="shopping-cart" glyph="shopping-cart"/></NavItem>
           </LinkContainer>
             <LinkContainer to={{pathname:'/contact'}}>
             <NavItem eventKey={1} href="#">Contact Us</NavItem>

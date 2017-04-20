@@ -15,7 +15,7 @@ describe('<Header />', ()=> {
 		expect(wrapper.find(FormGroup)).to.have.length(1);
 		expect(wrapper.find(FormControl)).to.have.length(1);
 		expect(wrapper.find(Nav)).to.have.length(1);
-		expect(wrapper.find(NavItem)).to.have.length(2);
+		expect(wrapper.find(NavItem)).to.have.length(3);
 		expect(wrapper.find(NavDropdown)).to.have.length(1);
 	})
 })

@@ -12,11 +12,7 @@ export default class LoginContainer extends React.Component{
     this.state = {
       email: '',
       password: '',
-      shoppingcart: [{
-        dishes: '',
-        price: '',
-        quantity: ''
-      }]
+      shoppingcart: []
     }
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }

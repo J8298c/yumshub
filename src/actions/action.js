@@ -25,3 +25,11 @@ export function setRestaurant(restaurants){
   };
   return action;
 }
+export const ADD_TO_CART = 'ADD_TO_CART';
+export function addToCart(dish){
+  const action = {
+    type: ADD_TO_CART,
+    dish
+  };
+  return action;
+}

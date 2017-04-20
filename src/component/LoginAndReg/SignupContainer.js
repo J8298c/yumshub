@@ -8,7 +8,7 @@ import './Login.css';
 
 const firebaseApp = firebaseObj.firebaseApp;
 
-export class  SignupContainer extends React.Component{
+class SignupContainer extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -23,6 +23,7 @@ export class  SignupContainer extends React.Component{
   onFormSubmit(event){
       event.preventDefault()
   }
+
   signUp(){
       const {email, password, firstname, lastname} = this.state;
       firebaseApp.auth().createUserWithEmailAndPassword(email, password)
@@ -61,9 +62,9 @@ export class  SignupContainer extends React.Component{
 
               <FormGroup>
                   <Col smOffset={2} sm={10}>
-                      <Button className="login-button" type="submit" onClick={this.signUp}>
+                      <Link to="/intro"><Button className="login-button" type="submit" onClick={this.signUp}>
                           Sign Up
-                      </Button>
+                      </Button></Link>
                   </Col>
               </FormGroup>
               <div><Link to="/login">Already a member</Link></div>
@@ -74,12 +75,13 @@ export class  SignupContainer extends React.Component{
 }
 
 const mapStateToProps = (state)=>{
-    const {email, password, firstname, lastname} = state;
+    const {email, password, firstname, lastname, shoppingcart} = state;
     return {
         email,
         password,
         firstname,
-        lastname
+        lastname,
+        shoppingcart
     }
 }
 

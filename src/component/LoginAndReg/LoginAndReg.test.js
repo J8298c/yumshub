@@ -30,16 +30,16 @@ describe('<LoginContainer />', ()=>{
 	})
 })
 
-describe('<SignupContainer />', ()=>{
-	it('renders the Signup Form', ()=>{
-		const wrapper = shallow(<SignupContainer />);
-		expect(wrapper.find(Form)).to.have.length(1);
-		expect(wrapper.find(FormGroup)).to.have.length(1);
-		expect(wrapper.find(Col)).to.have.length(1);
-	})
-	it('Signup Form submit triggers callback when clicked', ()=>{
-		const onClick = sinon.spy();
-		const wrapper = shallow(<SignupContainer onClick={onClick}/>);
-		wrapper.find(Button).simulate('submit');
-	})
-})
+// describe('<SignupContainer />', ()=>{
+// 	it('renders the Signup Form', ()=>{
+// 		const wrapper = shallow(<SignupContainer />);
+// 		expect(wrapper.find(Form)).to.have.length(1);
+// 		expect(wrapper.find(FormGroup)).to.have.length(1);
+// 		expect(wrapper.find(Col)).to.have.length(1);
+// 	})
+// 	it('Signup Form submit triggers callback when clicked', ()=>{
+// 		const onClick = sinon.spy();
+// 		const wrapper = shallow(<SignupContainer onClick={onClick}/>);
+// 		wrapper.find(Button).simulate('submit');
+// 	})
+// })
