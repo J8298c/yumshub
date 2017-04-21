@@ -1,6 +1,7 @@
 import React from 'react';
 import InputLabels from './InputLabels';
 import firebaseObj from '../../firebase';
+import Logo from '../Logo/Logo';
 import { Link } from 'react-router';
 import {Form, FormGroup, Button, Col} from 'react-bootstrap';
 import {connect} from 'react-redux';
@@ -43,9 +44,9 @@ class SignupContainer extends React.Component{
   }
     render(){
       return(
-          <div>
-                <h1>YumsHub</h1>
-          <Form onSubmit={this.onFormSubmit} className="login-form" horizontal>
+          <div className="logincontainer">
+                <Logo />
+          <Form onSubmit={this.onFormSubmit} className="signup-form" horizontal>
 
               <InputLabels  labelClass="input-label" type="text" placeholder="Enter Your Email" className="form-input"
                       onChange={event => this.setState({email: event.target.value})} labelName="Email"/>
@@ -62,12 +63,12 @@ class SignupContainer extends React.Component{
 
               <FormGroup>
                   <Col smOffset={2} sm={10}>
-                      <Link to="/intro"><Button className="login-button" type="submit" onClick={this.signUp}>
+                      <Link to="/intro"><Button className="login-button signup-button" type="submit" onClick={this.signUp}>
                           Sign Up
                       </Button></Link>
                   </Col>
               </FormGroup>
-              <div><Link to="/login">Already a member</Link></div>
+              <div className="signuplink"><Link to="/login">Already a member</Link></div>
         </Form>
         </div>
           )

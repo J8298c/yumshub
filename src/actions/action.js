@@ -33,3 +33,11 @@ export function addToCart(dish){
   };
   return action;
 }
+export const CLEAR_CART = 'CLEAR_CART';
+export function clearCart(cart){
+  const action = {
+    type: CLEAR_CART,
+    cart
+  }
+  return action;
+}

@@ -1,4 +1,4 @@
-import {LOGGED_IN, SIGNED_IN, ADD_TO_CART} from '../actions/action';
+import {LOGGED_IN, SIGNED_IN, ADD_TO_CART, CLEAR_CART} from '../actions/action';
 
 let user = {
   email: null,
@@ -37,6 +37,14 @@ export default (state = user, action) => {
       shoppingcart: [user.shoppingcart, ...state.shoppingcart]  
     });
     console.log(newState, 'the new state');
+    return newState;
+  }
+  else if (action.type === CLEAR_CART){
+    const {cart} = action;
+    const newState = Object.assign({}, state, {
+      shoppingcart: []
+    })
+    console.log(newState, 'new cart state after checkout')
     return newState;
   }
 

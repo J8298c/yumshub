@@ -47,3 +47,64 @@ background: -o-linear-gradient(left, #e35d5b, #e53935);
 background: linear-gradient(to right, #e35d5b, #e53935);
 height: 800px;
 }
+.signup-form {
+    width: 72%;
+    display: block;
+    margin: 4% auto;
+    height: 400px;
+    background-color: #673AB6;
+    padding: 7px;
+    border: 1px solid #673AB6;
+    border-radius: 10px;
+
+}
+.signup-button {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 500px) {
+    .form-horizontal .form-group {
+        margin: 0 auto;
+    }
+    button.login-button {
+        color: #FFFFFF;
+        background-color: #FE5252;
+        width: 45%;
+        display: block;
+        border-color: #FE5252;
+        margin: 25px auto;
+    }
+    .signuplink a {
+        color: #FEC007;
+        margin-left: 35px;
+        font-size: 15px;
+    }
+    .form-group {
+        width: 80%;
+    }
+    .signup-form {
+        width: 82%;
+        display: block;
+        margin: 4% auto;
+        height: 445px;
+        background-color: #673AB6;
+        padding: 0px;
+        border: 1px solid #673AB6;
+        border-radius: 10px;
+    }
+    .login-form {
+        width: 82%;
+        display: block;
+        margin: 4% auto;
+        height: 445px;
+        background-color: #673AB6;
+        padding: 0px;
+        border: 1px solid #673AB6;
+        border-radius: 10px;
+
+    }
+    .login-form input {
+        width: 93%;
+        display: block;
+    }
+}

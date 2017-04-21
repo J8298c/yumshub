@@ -190,7 +190,7 @@ p.type, p.price {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .banner-info {
       margin-top: 51%;
       width: 100%;
