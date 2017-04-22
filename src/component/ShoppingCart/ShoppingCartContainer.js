@@ -32,16 +32,15 @@ class ShoppingCartContainer extends React.Component {
         } else {
             return <div>
                     <HeadContainer />
-                    <h1>Sorry theres nothing in your cart </h1>
-                    <div><Link to="/">Click here to return to search </Link></div>
+                    <h1 className="empty-cart">Sorry theres nothing in your cart </h1>
+                    <div className="empty-cart-link"><Link to="/">Click here to return to search </Link></div>
                     </div>
         }
         return (
             <div>
                 <HeadContainer />
                 <div className="shoppingcart-container">{shoppingcartDiv}</div>
-                <div className="total">your total: </div>
-                <Button className="order-btn" onClick={this.checkOut}>Order</Button>
+                <Button className="login-button" onClick={this.checkOut}>Order</Button>
             </div>
         )
     }
