@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, Glyphicon} from 'react-bootstrap';
 import {Link} from 'react-router';
 import HeadContainer from './HeadContainer';
+import './Header.css';
 
 export default function Intro() {
         return (
