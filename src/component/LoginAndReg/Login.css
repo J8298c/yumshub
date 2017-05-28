@@ -40,15 +40,15 @@ button.login-button {
 .firstinput {
     margin-top: 28px;
 }
-
 .logincontainer{
-background: #e53935;  /* fallback for old browsers */
-background: -webkit-linear-gradient(left, #e35d5b, #e53935);
-background: -moz-linear-gradient(left, #e35d5b, #e53935);
-background: -o-linear-gradient(left, #e35d5b, #e53935);
-background: linear-gradient(to right, #e35d5b, #e53935);
-height: 800px;
+    background: url('https://firebasestorage.googleapis.com/v0/b/goodeats-f4106.appspot.com/o/Optimized-breakfastplatter.jpg?alt=media&token=157e6d0a-b521-417d-b02c-41075e8a0bb7');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
 .signup-form {
     width: 72%;
     display: block;
