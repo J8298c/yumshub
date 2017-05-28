@@ -1,4 +1,10 @@
-
+.logincontainer{
+    margin-top: 0px;
+    background: url('https://firebasestorage.googleapis.com/v0/b/goodeats-f4106.appspot.com/o/Optimized-veganplatter.jpg?alt=media&token=f0674361-87b6-47a8-b86e-d4cb73366909');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .login-form {
     width: 72%;
     display: block;
@@ -25,9 +31,14 @@ button.login-button {
     border-color: #FE5252;
     margin: 0px auto;
 }
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fcfcfc;
+}
+.navbar-toggle{
+    margin-right: -5px;
+}
 .signuplink a {
     color: #FEC007;
-    margin-left: 35px;
     font-size: 19px;
 }
 .form-horizontal .control-label {
@@ -57,24 +68,46 @@ button.login-button {
 .signup-button {
     margin-bottom: 25px;
 }
-
-@media screen and (max-width: 500px) {
-    .form-horizontal .form-group {
-        margin: 0 auto;
+@media only screen and (max-width: 499px) and (min-width: 320px){
+    .login-form{
+        height: 229px;
+        margin-top: 63px;
+        width: 82%;
+        display: block;
+        margin: 20% auto;
+        background-color: #673AB6;
+        padding: 0px;
+        border: 1px solid #673AB6;
+        border-radius: 10px;
+    }
+    .login-form input {
+        width: 93%;
+        display: block;
+        height: 26px;
+        font-size: 14px;
+        margin-top: 6px;
     }
     button.login-button {
         color: #FFFFFF;
         background-color: #FE5252;
-        width: 45%;
+        width: 26%;
         display: block;
         border-color: #FE5252;
-        margin: 25px auto;
+        margin: 17px auto;
+        font-size: 12px;
+    }
+    .signuplink{
+        width: 100%;
+        text-align: center;
     }
     .signuplink a {
         color: #FEC007;
-        margin-left: 35px;
         font-size: 15px;
     }
+    .form-horizontal .form-group {
+        margin: 0 auto;
+    }
+
     .form-group {
         width: 80%;
     }
@@ -82,25 +115,26 @@ button.login-button {
         width: 82%;
         display: block;
         margin: 4% auto;
-        height: 445px;
+        height: 310px;
         background-color: #673AB6;
         padding: 0px;
         border: 1px solid #673AB6;
         border-radius: 10px;
+        font-size: 14px;
     }
-    .login-form {
-        width: 82%;
-        display: block;
-        margin: 4% auto;
-        height: 445px;
-        background-color: #673AB6;
-        padding: 0px;
-        border: 1px solid #673AB6;
-        border-radius: 10px;
-
+    .input-label {
+        font-weight: bold;
+        font-size: 17px;
     }
-    .login-form input {
-        width: 93%;
-        display: block;
+    .logincontainer{
+        height: 570px;
+    }
+    .input-label {
+    font-weight: bold;
+    font-size: 13px;
+    }
+    #formHorizontalEmail{
+        height: 25px;
     }
 }
+

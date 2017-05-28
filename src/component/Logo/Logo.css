@@ -17,3 +17,12 @@
 .fourthletter {
     color: #673AB7;
 }
+.logo-container{
+    background-color: #FE5252;
+}
+@media only screen and (max-width: 47500px) and (min-width: 320px){
+    .logo{
+        font-size: 30px;
+        opacity: .9
+    }
+}
