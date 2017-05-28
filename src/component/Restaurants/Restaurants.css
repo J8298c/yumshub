@@ -98,7 +98,7 @@ span.glyphicon.glyphicon-star {
 }
 
 .thumbnail img {
-    width: 300px;
+    width: 100%;
     height: 182px;
 }
 .go-home {

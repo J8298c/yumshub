@@ -40,13 +40,7 @@ button.login-button {
 .firstinput {
     margin-top: 28px;
 }
-.logincontainer{
-    background: url('https://firebasestorage.googleapis.com/v0/b/goodeats-f4106.appspot.com/o/Optimized-breakfastplatter.jpg?alt=media&token=157e6d0a-b521-417d-b02c-41075e8a0bb7');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 
 .signup-form {

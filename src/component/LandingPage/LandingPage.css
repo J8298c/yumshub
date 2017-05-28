@@ -1,0 +1,52 @@
+.landingpage-image {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/goodeats-f4106.appspot.com/o/Optimized-landingpage.jpg?alt=media&token=66074793-020f-4335-ac41-ff14b5c8d3ac');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+.app-access{
+    background-color: #202C33;
+    width: 100%;
+    height: 300px;
+}
+.app-access button {
+    width: 15%;
+    margin-top: 31px;
+    margin-left: 23%;
+    margin-right: auto;
+    background-color: #FE5252;
+    border: 1px solid #FE5252;
+    color: #fcfcfc;
+    border-radius: 5px;
+}
+.app-access{
+    text-decoration: none;
+    color: #fcfcfc;
+}
+@media only screen and (max-width: 320px) and (min-width: 300px){
+    .app-access button {
+        width: 28%;
+        margin-top: 30px;
+        margin-left: 14%;
+        font-size: 17px;
+    }
+    .landingpage-image{
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 500px) and (min-width: 321px){
+    .landingpage-image{
+        height: 368px;
+    }
+    .app-access button {
+        font-size: 16px;
+        width: 22%;
+        margin-left: 19%;
+    }
+}
+
+
+
+
