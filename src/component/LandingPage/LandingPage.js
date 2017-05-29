@@ -8,11 +8,11 @@ class LandingPage extends React.Component{
         return( 
             <div>
                 <div className="landingpage-image">
-                </div>
-                <div className="app-access">
                     <Logo />
-                    <Link to="/login"><button>Login</button></Link>
-                    <Link to="/signup"><button>Signup</button></Link>
+                    <div className="blurred">
+                        <h4>Welcome to Yumshub</h4>
+                        <Link to="/login"><button>Login</button></Link>
+                    </div>
                 </div>
             </div>
         )
