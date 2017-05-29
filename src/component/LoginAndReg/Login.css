@@ -4,29 +4,39 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+     height: 56em;
 }
-.login-form {
-    width: 72%;
+.logincontainer a {
+    text-decoration: none;
+}
+.login-button.signup-button.btn.btn-default {
+    width: 31%;
+    font-size: 17px;
+}
+.login-form{
+    height: 276px;
+    width: 82%;
     display: block;
-    margin: 4% auto;
-    height: 324px;
-    background-color: #6D6A72;
-    padding: 20px;
-    border: 1px solid #6D6A72;
+    margin: 20% auto;
+    background-color: rgba(25,25,30,0.5);
+    padding: 0px;
+    border: 1px solid rgba(25,25,30,0.5);
     border-radius: 10px;
-}
+    }
+
 .input-label {
   font-weight: bold;
   font-size: 20px;
 }
 .form-input, .password-input {
-    width: 112%;
+    width: 100%;
     display: block;
 }
+
 button.login-button {
     color: #FFFFFF;
     background-color: #FE5252;
-    width: 45%;
+    width: 33%;
     display: block;
     border-color: #FE5252;
     margin: 0px auto;
@@ -41,32 +51,40 @@ button.login-button {
     color: #FEC007;
     font-size: 19px;
 }
+.signuplink {
+    text-align: center;
+}
 .form-horizontal .control-label {
-    padding-top: 7px;
+    padding-top: 0px;
     margin-bottom: 0;
     text-align: right;
     color: #fcfcfc;
 }
 
-.firstinput {
-    margin-top: 28px;
+#formHorizontalEmail{
+    height: 28px;
+    padding: 2px 7px;
+
 }
-
-
-
+.firstinput {
+    margin-top: 20px;
+}
 .signup-form {
-    width: 72%;
+    height: 401px;
+    margin-top: 63px;
+    width: 82%;
     display: block;
-    margin: 4% auto;
-    height: 400px;
-    background-color: #673AB6;
-    padding: 7px;
-    border: 1px solid #673AB6;
-    border-radius: 10px;
-
+    margin: 10% auto;
+    background-color: rgba(25,25,30,0.5);
+    padding: 16px;
+    border: 1px solid rgba(25,25,30,0.5);
+    border-radius: 20px;
 }
 .signup-button {
     margin-bottom: 25px;
+}
+.blurred h4{
+    color: #fcfcfc;
 }
 @media only screen and (max-width: 499px) and (min-width: 320px){
     .login-form{
