@@ -15,6 +15,7 @@ import RestaurantMenuContainer from './component/RestaurantMenu/RestaurantMenuCo
 import Contact from './component/Contact/Contact';
 import ShoppingCartContainer from './component/ShoppingCart/ShoppingCartContainer';
 import Intro from './component/Header/Intro';
+import LandingPage from './component/LandingPage/LandingPage';
 
 
 const initialAppState = {
@@ -33,16 +34,17 @@ firebaseApp.auth().onAuthStateChanged(function(user) {
   if (user) {
     const {email, displayName, shoppingcart} = user;
     store.dispatch(logIn(email, displayName, shoppingcart));
-    browserHistory.push('/');
+    browserHistory.push('/restaurants');
   } else {
-    browserHistory.replace('/login');
+    browserHistory.replace('/');
   }
 });
 
  const Routes = (
    <Provider store={store}>
     <Router history={browserHistory}>
-        <Route path="/" component={RestaurantsContainer}/>
+        <Route path="/" component={LandingPage} />
+        <Route path="/restaurants" component={RestaurantsContainer}/>
         <Route path="/profile" component={Profile} />
         <Route path="/intro" component={Intro} />
         <Route path="restaurants/:name"  component={RestaurantMenuContainer} />

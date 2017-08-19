@@ -18,8 +18,8 @@ import {LinkContainer} from 'react-router-bootstrap';
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse className="nav-drop">
-          <Navbar.Form pullLeft>
-            <FormGroup>
+          <Navbar.Form className="nav-form" pullLeft>
+            <FormGroup className="header-search">
               <FormControl type="text" placeholder="Search" className="app-search-bar" onChange={this.props.onChange}/>
                 <Button onClick={this.props.onSubmit}>Search</Button>
             </FormGroup>

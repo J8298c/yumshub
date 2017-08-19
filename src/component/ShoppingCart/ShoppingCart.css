@@ -1,0 +1,14 @@
+.shoppingcart-container {
+    margin-top: 35px;
+}
+.empty-cart {
+	text-align: center;
+}
+.empty-cart-link {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 19px;
+}
+.menu-Item {
+    font-size: 12px;
+}
