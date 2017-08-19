@@ -38,6 +38,6 @@ export function clearCart(cart){
   const action = {
     type: CLEAR_CART,
     cart
-  }
+  };
   return action;
 }
